@@ -19,7 +19,7 @@ class AopWithCachingApplicationTests {
 
     @Test
     void testCancelOrder(){
-        orderService.cancelOrder(1L);
+        String s = orderService.cancelOrder(0L);
+        System.out.println(s);
     }
-
 }

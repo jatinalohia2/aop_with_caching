@@ -24,11 +24,10 @@ public class OrderService {
 
         try {
             log.info("Order Cancelled");
+            throw new RuntimeException("exception in the cancel order ...");
         } catch (Exception e) {
-            log.info("something went wrong {}",e.getLocalizedMessage());
+            throw new RuntimeException("catch exception in the cancel order ..." +e.getLocalizedMessage());
         }
-
-        return "Order Successfully cancelled";
     }
 
 
