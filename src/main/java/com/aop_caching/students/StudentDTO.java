@@ -1,17 +1,18 @@
-package com.aop_caching;
+package com.aop_caching.students;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentDTO {
+public class StudentDTO implements Serializable {
 
     private String name;
     private String rollNo;

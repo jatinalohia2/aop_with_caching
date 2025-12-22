@@ -2,6 +2,21 @@ spring:
   application:
     name: aop_with_caching
 
+  cache:
+    type: REDIS
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+#      production lvl config :
+#      host: redis-10286.crce21adada7.ap-south-1-1.edc2.cloud.redislabs.com
+#      port: 10286
+#      password: E45GpTkHC4B4asdasdSWwMsZw3Ygz0eMt2cdA2
+#      ssl:
+#        enabled: false
+
+
 #  data base config :
   datasource:
     url: jdbc:mysql://localhost:3306/aopandcaching
@@ -12,7 +27,7 @@ spring:
 #  hibernate & jpa
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
 
     show-sql: true
     properties:

@@ -1,6 +1,5 @@
-package com.aop_caching;
+package com.aop_caching.students;
 
-import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

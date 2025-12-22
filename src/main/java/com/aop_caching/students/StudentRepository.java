@@ -1,4 +1,4 @@
-package com.aop_caching;
+package com.aop_caching.students;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

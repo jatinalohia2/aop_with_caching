@@ -1,4 +1,4 @@
-package com.aop_caching;
+package com.aop_caching.students;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
